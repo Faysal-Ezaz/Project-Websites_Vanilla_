@@ -60,6 +60,10 @@ nav ul li{
     flex-direction: column; 
 }
 
+.icons{
+    /* margin-top: 20px;  */
+    padding: 5px;
+}
 
 #myProgressBar{
     width: 80vw; 
@@ -67,3 +71,8 @@ nav ul li{
      
 
 }
+
+
+/* .fa-3x{
+    font-size: 2em; 
+} */
