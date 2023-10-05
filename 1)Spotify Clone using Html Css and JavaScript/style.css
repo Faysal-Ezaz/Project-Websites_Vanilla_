@@ -25,7 +25,7 @@ nav ul{
     align-items: center;
 }
 
-.brand img{  /*brand class ke andar ki image ko target kar rhe hai. */
+.brand img{  /*brand class ke andar ki image ko target kar rhe hai.*/
     width: 44px; 
     padding: 0px 6px;
     /* the padding will only apply to the left and right and not to top and bottom */
@@ -40,4 +40,30 @@ nav ul li{
     align-items: center;
     font-weight: bolder;
     font-size: 1.3rem;
+}
+
+.container{
+    min-height: 79vh; 
+    /* vh(viewport height) means the percentage of height */
+}
+
+
+/* We will use this to edit the bottom progress bar with the play/pause button */
+.bottom{
+    position: sticky; 
+    height: 100px; 
+    background-color: black; 
+    color: white; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column; 
+}
+
+
+#myProgressBar{
+    width: 80vw; 
+    /* vw(viewport width) means the percentage of width */
+     
+
 }
