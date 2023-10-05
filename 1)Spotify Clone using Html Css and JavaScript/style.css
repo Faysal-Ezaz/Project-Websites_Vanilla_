@@ -14,17 +14,18 @@ nav{
     font-family: 'Ubuntu', sans-serif;
 }
 
+/* Updating the navbar items, image, home, about. */
 nav ul{
     display: flex;
     /* ye karne se saare ul wale elements horizontal ho jaayeneg! */
-    list-style-type: none;
+    list-style-type: none; /* Removing the dots.*/
     height: 65px; 
     background-color: black;
     color: white;
     align-items: center;
 }
 
-.brand img{
+.brand img{  /*brand class ke andar ki image ko target kar rhe hai. */
     width: 44px; 
     padding: 0px 6px;
     /* the padding will only apply to the left and right and not to top and bottom */
