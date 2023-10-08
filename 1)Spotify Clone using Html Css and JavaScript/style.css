@@ -33,6 +33,7 @@ nav ul{
 
 nav ul li{
     padding: 0 12px; 
+    cursor: pointer;
 } 
 
 .brand{
@@ -43,26 +44,40 @@ nav ul li{
 }
 
 .container{
-    min-height: 79vh; 
+    min-height: 75vh; 
     /* vh(viewport height) means the percentage of height */
+    background-color: black; 
+    color: white; 
+    font-family: 'Varela Round', sans-serif;  
+    display: flex;
+    margin: 23px auto; 
+    /* here margin is in the format (top, bottom); (left, right) */  
+    width: 70%; 
+    border-radius: 12px;
+    padding: 34px; 
 }
 
 
 /* We will use this to edit the bottom progress bar with the play/pause button */
 .bottom{
-    position: sticky; 
-    height: 100px; 
     background-color: black; 
     color: white; 
     display: flex; 
-    justify-content: center; 
-    align-items: center;
     flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    position: sticky; 
+    height: 100px; 
 }
 
 .icons{
-    /* margin-top: 20px;  */
-    padding: 5px;
+    margin-top: 20px; 
+    /* padding: 5px; */
+}
+
+/* icons ke andar ke i elements ko ham cursor:pointer wali property dnge */
+.icons i{
+    cursor: pointer;
 }
 
 #myProgressBar{
