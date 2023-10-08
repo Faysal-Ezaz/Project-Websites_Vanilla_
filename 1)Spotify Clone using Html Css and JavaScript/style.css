@@ -98,15 +98,32 @@ nav ul li{
 /* Abhi tee kaam hai, pehla image chota karna hai, text size bada karna hai, and teesra play icons ka size theek karna hai. */
 /* song item ke image ko theek karne ke lie ham direct target image ko karenge (songItem img{})*/
 
+.songItemContainer{
+    margin-top: 74px;
+}
 
-.songItem{
+.songItem{ 
     height: 50px; 
     display: flex;
-    background-color: white;
-    width: 80%; 
+    background-color: rgb(104, 88, 88);
+    color: black;
+
+    /* Adjusting the alignment, space between the image, text and the button */
+    justify-content: space-between;
+    align-items:center; 
+    border-radius: 34px; 
+    /* padding: 10px; */
 }
 
 /* SongItem ke image ko theek karne ke lie:  */
 .songItem img{
+    width: 43px; 
+    margin: 0px 23px;
+    /* we will make the image circular */
+    border-radius: 34px;
+}
 
+.timeStamp{
+    margin: 0 23px; /* top and bottom: 0*/
+    cursor: pointer;
 }
