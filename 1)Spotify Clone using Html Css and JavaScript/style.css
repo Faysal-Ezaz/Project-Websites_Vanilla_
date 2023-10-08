@@ -94,3 +94,19 @@ nav ul li{
 /* .fa-3x{
     font-size: 2em; 
 } */
+
+/* Abhi tee kaam hai, pehla image chota karna hai, text size bada karna hai, and teesra play icons ka size theek karna hai. */
+/* song item ke image ko theek karne ke lie ham direct target image ko karenge (songItem img{})*/
+
+
+.songItem{
+    height: 50px; 
+    display: flex;
+    background-color: white;
+    width: 80%; 
+}
+
+/* SongItem ke image ko theek karne ke lie:  */
+.songItem img{
+
+}
