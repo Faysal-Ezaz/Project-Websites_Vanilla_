@@ -99,10 +99,12 @@ nav ul li{
 /* song item ke image ko theek karne ke lie ham direct target image ko karenge (songItem img{})*/
 
 .songItemContainer{
-    margin-top: 74px;
+    margin-top: 74px; 
+
 }
 
 .songItem{ 
+    margin: 5px;
     height: 50px; 
     display: flex;
     background-color: rgb(104, 88, 88);
@@ -126,4 +128,14 @@ nav ul li{
 .timeStamp{
     margin: 0 23px; /* top and bottom: 0*/
     cursor: pointer;
+}
+
+.songInfo{
+    position: absolute;
+    left: 10vw; 
+}
+
+.songInfo img{
+    opacity: 0;
+    transition: opacity 1s ease-in;
 }
