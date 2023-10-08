@@ -44,7 +44,7 @@ nav ul li{
 }
 
 .container{
-    min-height: 75vh; 
+    min-height: 72vh; 
     /* vh(viewport height) means the percentage of height */
     background-color: black; 
     color: white; 
@@ -55,6 +55,7 @@ nav ul li{
     width: 70%; 
     border-radius: 12px;
     padding: 34px; 
+    background-image: url('bg.jpg');
 }
 
 
@@ -67,7 +68,9 @@ nav ul li{
     justify-content: center; 
     align-items: center; 
     position: sticky; 
-    height: 100px; 
+    height: 110px;
+    bottom: 0;
+     /*If we donot add the 'bottom' css property, ye position: sticky property kaam nahi karega. */
 }
 
 .icons{
