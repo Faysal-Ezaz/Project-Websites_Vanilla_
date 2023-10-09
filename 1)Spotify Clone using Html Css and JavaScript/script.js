@@ -7,16 +7,16 @@ let masterPlay = document.getElementById('masterPlay'); /* */
 let myProgressBar = document.getElementById('myProgressBar')
 
 let songs = [
-    {songName: "Salam-e-Ishq", filePath: "1.mp3", coverPath},
-    {songName: "Salam-e-Ishq", filePath: "1.mp3", coverPath},
-    {songName: "Salam-e-Ishq", filePath: "1.mp3", coverPath},
-    {songName: "Salam-e-Ishq", filePath: "1.mp3", coverPath},
-    {songName: "Salam-e-Ishq", filePath: "1.mp3", coverPath},
-    {songName: "Salam-e-Ishq", filePath: "1.mp3", coverPath},
-    {songName: "Salam-e-Ishq", filePath: "1.mp3", coverPath},
-    {songName: "Salam-e-Ishq", filePath: "1.mp3", coverPath},
-    {songName: "Salam-e-Ishq", filePath: "1.mp3", coverPath},
-    {songName: "Salam-e-Ishq", filePath: "1.mp3", coverPath}
+    {songName: "Salam-e-Ishq", filePath: "song/1.mp3", coverPath: "cover/1.jpg"},
+    {songName: "Salam-e-Ishq", filePath: "1.mp3", coverPath: "1.jpg"},
+    {songName: "Salam-e-Ishq", filePath: "1.mp3", coverPath: "1.jpg"},
+    {songName: "Salam-e-Ishq", filePath: "1.mp3", coverPath: "1.jpg"},
+    {songName: "Salam-e-Ishq", filePath: "1.mp3", coverPath: "1.jpg"},
+    {songName: "Salam-e-Ishq", filePath: "1.mp3", coverPath: "1.jpg"},
+    {songName: "Salam-e-Ishq", filePath: "1.mp3", coverPath: "1.jpg"},
+    {songName: "Salam-e-Ishq", filePath: "1.mp3", coverPath: "1.jpg"},
+    {songName: "Salam-e-Ishq", filePath: "1.mp3", coverPath: "1.jpg"},
+    {songName: "Salam-e-Ishq", filePath: "1.mp3", coverPath: "1.jpg"}
 ]
 // audioElement.play() 
 
