@@ -1,0 +1,123 @@
+/* This is the css file for tut26.html */
+/* first we will be doing the CSS reset: ie margin: 0px and padding: 0px; */
+body{
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    margin: 0px;
+    padding: 0px; 
+    /* background: url('images/Gymphoto.jpg');  */
+    background-color: #2f2f2f;
+    /* height: 4554px;  */
+}
+/* working on the header section */
+.left{
+    font-family: 'Ubuntu', sans-serif;
+    display: inline-block;
+    position: absolute; 
+    left: 34px;
+    top: 20px;
+    /* border: 2px solid red;  */
+    color: whitesmoke; 
+    text-align: center;
+}
+.center{
+    font-family: 'Ubuntu', sans-serif;
+    display: block;
+    width: 33%;
+    margin: 20px auto;
+    /* border: 2px solid green;  */
+    color: white;
+}
+.right{
+    position: absolute;
+    /* Here the header is the Parent Element. */
+    /* so the position will be absolute to the header element. */
+    right: 34px; 
+    top: 20px; 
+    display: inline-block;
+    /* border: 2px solid yellow;  */
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+} 
+/* Now we will work on the navbar */
+.navbar{
+    display: inline-block; 
+}
+
+.navbar li{
+    display: inline-block; 
+    font-size: 13px;
+}
+
+.navbar li a{
+    color: white;   
+    text-decoration: none; 
+    padding: 34px 23px;
+}
+.navbar li a:hover, .navbar li a:active{
+    text-decoration: underline; 
+    color: grey; 
+
+}
+
+/* Now we will be working on the Gym Image logo */
+.left img{
+    width: 136px;
+    
+}
+
+/* Now we shall be working on the buttons. */
+.btn{
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0px 9px; 
+    background-color: black;
+    color: white;
+    padding: 4px 14px;
+    border: 2px solid grey; 
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    text-align: center;
+    /* first vertical then horizontal -> applicable when we give only two values. */
+    /* by default the text inside the button is black  */
+}
+.btn:hover{
+    background-color: beige;
+    color:  black;
+}
+
+.container{
+    position: relative;
+    top: 65px;
+    left: 30px;
+    /* the first three lines was added by me to change the position of the text! */
+    /* border: 2px solid white;  */
+    margin: 115px 80px;
+    padding: 40px 40px; 
+    width: 33%; 
+    border-radius: 28px;   
+} 
+.container h1{
+    text-align: center;
+}
+.form-group input{
+    text-align: center; 
+    display: block;
+    width: 508px; 
+    padding: 1px;
+    /* border: 2px solid black; */
+    margin: 11px auto;
+    font-size: 25px;
+    border-radius: 8px;
+    font-family: 'Ubunutu', cursive;
+}
+.container button{
+    display: block; 
+    width: 74%;
+    margin: auto;
+}
+/* agar koi bhi ek element hame center me lani hai to 3 condition hoti hai jise satisfy karne se hamara kaam ho jaayega
+1) Pehle element ka "display:block" karna parega
+2) width: x% set karna parega
+3) margin: 12px(y-axis) auto(x-axis)
+Aur ye karne ke baad hamara element center me aa jaayega. */
