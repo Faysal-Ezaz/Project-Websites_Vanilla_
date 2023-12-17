@@ -1,3 +1,4 @@
+/* The best part about creating a utility class is that we can reuse it. */
 /* This is for the h1 element, bringing it to the center. */
 .text-center{  
     text-align: center;
@@ -15,4 +16,8 @@
 }
 .flex-col{
     flex-direction: column;
+}
+.items-center{
+    align-items:center; 
+    justify-content: center;
 }

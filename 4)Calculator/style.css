@@ -6,4 +6,20 @@ html, body{
 /* refer to the buttons comment */
 .button{
     padding: 20px;
+    margin: 0 3px;
+    /* top-bottom:0, left-right:3px  */
+    border: 2px solid black;
+    border-radius: 9px; 
+    cursor: pointer;
+}
+
+/* each 'row' hold 5 buttons */
+.row{
+    margin: 12px 0;
+     /*top bottom: 12px; left right already given auto.  */
+}
+
+.row input{
+    margin: 0; 
+    padding: 3px 36px;
 }
