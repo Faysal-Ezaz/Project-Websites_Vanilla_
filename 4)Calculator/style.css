@@ -10,7 +10,9 @@ html, body{
     padding: 20px;
     margin: 0 3px;
     /* top-bottom:0, left-right:3px  */
-    border: 2px solid black;
+    width: 60px;
+    /* This will remove the pattern disparity and make the size same for all of them. */
+    border: 3px solid black;
     border-radius: 9px; 
     cursor: pointer;
 }
@@ -18,13 +20,17 @@ html, body{
 /* each 'row' hold 5 buttons */
 .row{
     margin: 12px 0;
-     /*top bottom: 12px; left right already given auto.  */
+    /*top bottom: 12px; left right already given auto.  */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .row input{
+    width: 250px;
     font-size: 19px;
     margin: 0; 
     padding: 8px 3px;
-    border: 2px solid black;
+    border: 3px solid black;
     border-radius: 5px;
 }
