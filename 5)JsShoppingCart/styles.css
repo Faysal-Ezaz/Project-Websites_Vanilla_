@@ -11,6 +11,7 @@
 
 body{
     font-family: sans-serif;
+    
 }
 
 /* Navbar styles are here. */
@@ -25,6 +26,23 @@ body{
 
 /* working on styling the cart-icon:  */
 .cart{
+    position: relative;
     background-color: #fff;
     color: #212529;
+    font-size: 30px;
+    padding: 5px;   
+    border-radius: 4px;
+}
+
+/* trying to bring the number to the top of the cart. */
+.cartAmount{
+    position: absolute; 
+    top: -15px;
+    right: -10px;
+    /* posabs tab for position: absolute */
+    font-size: 16px;
+    background-color: red;
+    color: white;
+    padding: 3px;
+    border-radius: 3px;
 }
