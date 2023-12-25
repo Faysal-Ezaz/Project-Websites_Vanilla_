@@ -1,3 +1,8 @@
+/* 
+    changing the default styles of the browser.
+    the main rule of using flexbox is to use it under the parent selector
+*/
+
 *{
     margin: 0;
     padding: 0; 
@@ -6,4 +11,20 @@
 
 body{
     font-family: sans-serif;
+}
+
+/* Navbar styles are here. */
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #212529;
+    color: white;
+    padding: 25px 60px; /*top-bottom left-right*/
+}
+
+/* working on styling the cart-icon:  */
+.cart{
+    background-color: #fff;
+    color: #212529;
 }

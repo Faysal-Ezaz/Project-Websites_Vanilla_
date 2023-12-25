@@ -5,9 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clothing Store</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
 </head>
+
 <body>
-    Hello World
+    <!-- working on the navbar -->
+    <div class="navbar">
+        <h2>New Market Clothing Store</h2>
+        <!-- working on the "cart logo". -->
+        <div class="cart">
+            <i class="bi bi-cart-check"></i> <!--This is the cart logo.-->
+            <!-- for the cart amount -->
+            <div class="cartAmount">0</div>
+            <!-- the number here determines the number that will show on top of the cart logo -->
+        </div>
+        <!-- <div class="navExtraa">
+            Hello
+        </div> 
+    yaha jaise he hamne 3rd div include kar dia na to 
+justify-content: space between property 3 child elements ke beech space divide karne lag gaya tha. -->
+        <!-- a point to note: 
+        here inside the parent div till now there are two elements first is the 'h2' element and the other is .cart div element. 
+    but, .cartAmount div element and icon wala <i> element  is inside .cart div element so it is not affected directly. moreover when we are using the justify-content: space between then the main thing thats happening is that it works between (a)h2 element and (b).cart div element. -->
+    </div>
 </body>
+
 <script src="main.js"></script>
+
 </html>
