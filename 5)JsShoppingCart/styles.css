@@ -10,8 +10,7 @@
 } 
 
 body{
-    font-family: sans-serif;
-    
+    font-family: sans-serif;    
 }
 
 /* Navbar styles are here. */
@@ -22,6 +21,7 @@ body{
     background-color: #212529;
     color: white;
     padding: 25px 60px; /*top-bottom left-right*/
+    margin-bottom: 30px;
 }
 
 /* working on styling the cart-icon:  */
@@ -45,4 +45,56 @@ body{
     color: white;
     padding: 3px;
     border-radius: 3px;
+} 
+
+/* Arranging the items of shop class to make it appear in the column format */
+.shop{
+    display: grid;
+    grid-template-columns: repeat(4, 223px);    
+    gap: 30px;
+    justify-content: center;
+}
+/* adding media querry: to make the website responsive:  */
+@media (max-width: 1000px){
+    .shop{
+        grid-template-columns: repeat(2, 223px) 
+    }
+}
+@media (max-width: 500px){
+    .shop{
+        grid-template-columns: repeat(1, 223px) 
+    }
+}
+
+.item{
+    border: 2px solid #212529;
+}
+
+/* .details is a child element of the .shop class */
+.details{  /*under details there are the elements <h3>, <p>, .price-quantity.*/
+    display: flex;
+    flex-direction: column;    
+    padding: 10px;
+    gap: 10px;
+}
+/* there is a problem, the price and the buttons are not alligned to the center. To solve this we will have to do use the align-items:center property. */
+.price-quantity{
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between; /* this acts on the x-axis. */
+    align-items: center; /* This acts on the Y-axis. */
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-evenly; 
+    /* now in order to include the gap between -, number and +, we will use the gap property. not the padding property. */
+    gap: 8px;
+    font-size: 16px;
+}
+.bi-dash-lg{
+    color: red;
+}
+.bi-plus-lg{
+    color: green;
 }

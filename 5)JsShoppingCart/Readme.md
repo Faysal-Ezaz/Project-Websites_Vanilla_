@@ -9,4 +9,13 @@ Then we click on the icon and then the icon font will be copied and pasted in th
 
 Now for the colors I will use the website (coolers.co)
 
-<h2>The main rule of using <i>Flex-Bos</i> is to use it under the <b>parent selector</b>.</h2>
+<h2>The main rule of using <i>Flex-Bos</i> is to use it under the <b>parent selector</b>.</h2> 
+
+
+
+## There are two types of function: 
+    a) ES6 error funtion.
+        a) let generateShop = ()=>{}
+    
+    b) normal function. 
+        b) funtion abcd(){}
