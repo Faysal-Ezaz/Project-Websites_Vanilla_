@@ -1,0 +1,58 @@
+*{
+    margin: 2px; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+.navbar{
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-text{
+    display:flex;
+    align-items:center;
+    gap: 2px;
+} 
+
+
+/* working on the elements:  */
+.options{
+    /* since all the elemets inside are a bunch of divs so they will appear in the column format,
+    to improve this we will use flex-direction: row. */
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between; 
+    /* justify content will space out the gaps evenly */
+    /* need to add the gap property as well. */
+    align-items: center;
+    /* this is only for the current reference and will remove later. */
+    gap: 4px;
+}
+/* working on the individual elements. */
+.element{
+    padding: 7px;
+    border: 2px solid #233;
+    border-radius: 20px; 
+    cursor: pointer;
+}
+
+/* working on the button. */
+.btn{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+}
+.btn-element{
+    cursor: pointer;
+    padding: 3px; 
+    font-family: 'Times New Roman', Times, serif;
+    font-size: auto; 
+    border: 2px solid #233; 
+    border-radius: 20px;
+    padding: 5px;
+}

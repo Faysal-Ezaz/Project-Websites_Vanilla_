@@ -1,0 +1,30 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <meta charset = "UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title>Simple Navbar</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo-text">
+            <!-- this is for the image and the text -->
+            <img src="data:image/png;base64,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" alt="crowdsource logo" class="logo" width="100">
+            <span class="text">CrowdSource by Google</span>
+        </div>
+        <div class="options">
+            <!-- This is for the menu bar -->
+            <div class="element">About</div>
+            <div class="element">How It Works</div>
+            <div class="element">Community</div>
+            <div class="element">Blog</div>
+            <div class="element">OpenSource</div>
+        </div>
+        <div class="btn">
+            <!-- This is for the about button. -->
+            <div class="btn-element">Get Started</div>
+        </div>
+    </div>
+</body>
+</html>
