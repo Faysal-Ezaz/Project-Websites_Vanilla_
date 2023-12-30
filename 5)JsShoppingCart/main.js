@@ -2,10 +2,44 @@
 let shop = document.getElementById('shop');
 // succcessfully targeted #short and save it inside a variable.
 
+let shopItemsData = [
+    {
+        id: "1",
+        name: "Casual Shirt", 
+        price: 45, 
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing.", 
+        img: "images/img-1.jpg"
+        // successfully defined one item(object).
+    }, 
+    {
+        id: "1",
+        name: "Casual Shirt", 
+        price: 45, 
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing.", 
+        img: "images/img-1.jpg"
+    }, 
+    {
+        id: "1",
+        name: "Casual Shirt", 
+        price: 45, 
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing.", 
+        img: "images/img-1.jpg"
+    }, 
+    {
+        id: "1",
+        name: "Casual Shirt", 
+        price: 45, 
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing.", 
+        img: "images/img-1.jpg"
+    }
+]
+// the above code denotes that we have 4 items to sell.
+
 console.log(shop);
 
+// all the code below is hard coded, and we need to automate it, as we need a lot of the cards. 
 let generateshop =() =>{
-    return `
+    return shop.innerHTML=  `
     <div class="item">
         <img width="220" src="images/img-1.jpg" alt="">
         <div class="details">
