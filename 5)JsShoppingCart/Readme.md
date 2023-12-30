@@ -9,22 +9,22 @@ Then we click on the icon and then the icon font will be copied and pasted in th
 
 Now for the colors I will use the website (coolers.co)
 
-<h2>The main rule of using <i>Flex-Bos</i> is to use it under the <b>parent selector</b>.</h2> 
+<h2>The main rule of using <i>Flex-Box</i> is to use it under the <b>parent selector</b>.</h2> 
 
 
 
 ## There are two types of function in JS: 
-<description>
+<details>
     a) ES6 arrow function.
         a) let generateShop = ()=>{}
-    
     b) normal function. 
         b) funtion abcd(){}
-</description>
+</details>
 
 ## This is the removed code from the codebase: 
-<describe>
-        <div class="item">
+<details>    
+    
+    <div class="item">
             <img width="220" src="images/img-2.jpg" alt="">
             <div class="details">
                 <h3>Office Shirt</h3>
@@ -72,4 +72,4 @@ Now for the colors I will use the website (coolers.co)
                 </div>
             </div>
         </div>
-</describe>
+</details>
