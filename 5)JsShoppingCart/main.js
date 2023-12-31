@@ -44,18 +44,20 @@ let generateshop =() =>{ // this is an ES6 arrow function.
             // instead of using x.items, x. price, etc. We will be using the concept of DESTRUCTURING: 
             let {id, name, price, desc, img} = x;
         return `
-            <div class="item">
+            <div id=product-id-${id} class="item">
                 <img width="220" src=${img} alt="">
                 <div class="details">
                     <h3>${name}</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                    <p>${desc}</p>
                     <div class="price-quantity">
                         <h2> $ ${price}</h2>
                         <div class="buttons">
                             <!-- here we use bootstrap icons. -->
-                            <i class="bi bi-dash-lg"></i>
-                            <div class="quantity">0</div>  <!--This is the number of items between the plus and the minus symbols-->
-                            <i class="bi bi-plus-lg"></i> 
+                            <i onclick="decrement(${id})" class="bi bi-dash-lg"></i>
+                            
+                            <div id=${id} class="quantity">0</div>  <!--This is the number of items between the plus and the minus symbols-->
+                            
+                            <i onclick="increment(${id})" class="bi bi-plus-lg"></i> 
                         </div>
                     </div>
                 </div>
@@ -63,5 +65,23 @@ let generateshop =() =>{ // this is an ES6 arrow function.
         `;
     } ).join(""));
 };
+// The reason behind creating the id is so that the '0' will be targetted using the id.
 
-generateshop(); // This is the function call. 
+generateshop(); // This is the function call that displays all the content. 
+
+// So far so good now we will work on the increment and the decrement funtion. 
+
+// the increment function.
+let increment = (id) => {
+    let selectedItem = id;
+    console.log(selectedItem.id);
+};
+// The decrement function.
+let decrement = (id) => {
+    // let selectedItem = id;
+    // console.log(selectedItem.id);
+};
+// the update function to update the number after incrementation or decrementation.
+let update = ()  => {
+
+};
