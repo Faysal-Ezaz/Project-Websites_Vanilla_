@@ -2,7 +2,7 @@
 let shop = document.getElementById('shop');
 // succcessfully targeted #short and save it inside a variable.
 
-let shopItemsData = [
+let shopItemsData = [ // declaring an array that has many objects.
     {
         id: "1",
         name: "Casual Shirt", 
@@ -38,27 +38,30 @@ let shopItemsData = [
 console.log(shop);
 
 // all the code below is hard coded, and we need to automate it, as we need a lot of the cards. 
-let generateshop =() =>{
-    return (shop.innerHTML=  shopItemsData.map( ()=> {
+let generateshop =() =>{ // this is an ES6 arrow function.
+    return (shop.innerHTML=  shopItemsData
+        .map( (x)=> {
+            // instead of using x.items, x. price, etc. We will be using the concept of DESTRUCTURING: 
+            let {id, name, price, desc, img} = x;
         return `
-        <div class="item">
-            <img width="220" src="images/img-1.jpg" alt="">
-            <div class="details">
-                <h3>Casual Shirt</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
-                <div class="price-quantity">
-                    <h2> $ 45</h2>
-                    <div class="buttons">
-                        <!-- here we use bootstrap icons. -->
-                        <i class="bi bi-dash-lg"></i>
-                        <div class="quantity">0</div>  <!--This is the number of items between the plus and the minus symbols-->
-                        <i class="bi bi-plus-lg"></i> 
+            <div class="item">
+                <img width="220" src=${img} alt="">
+                <div class="details">
+                    <h3>${name}</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                    <div class="price-quantity">
+                        <h2> $ ${price}</h2>
+                        <div class="buttons">
+                            <!-- here we use bootstrap icons. -->
+                            <i class="bi bi-dash-lg"></i>
+                            <div class="quantity">0</div>  <!--This is the number of items between the plus and the minus symbols-->
+                            <i class="bi bi-plus-lg"></i> 
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
         `;
     } ).join(""));
 };
 
-generateshop();
+generateshop(); // This is the function call. 
