@@ -8,7 +8,8 @@ body{
     /* What I am doing next shall ensure that the "content occupies the entire screen" */
     min-height: 100vh;
     background: url(google-crowdsource-bg-img.png);
-    background-size: cover; /* This property covers the entire screen without any disproportions */
+    background-size: stretch; /* This property covers the entire screen without any disproportions */
+    /* for background-size the property was cover but i changed it to stretch to test the backdrop-filter property. */
     background-repeat: no-repeat; 
     background-position: center; /* This will center the background. */
     /* This way we insure that the image covers the entire container(cover), there is no repeat(repeat), and the image is at the center(position). */
@@ -22,7 +23,7 @@ nav{
 }
 /* working on the nav-ul */
 nav ul{
-    width: 100%; /* To make it span the whole width of the container. */
+    width: 100%; /*To make it span the whole width of the container. */
     list-style: none;
     display: flex; 
     justify-content: flex-end;
@@ -37,7 +38,7 @@ nav li{
 nav a{
     height: 100%;  /* This is done to match the height of the list items 'nav li' */
     padding: 0 30px; 
-    text-decoration: none; /* This will remove the underline from the texts*/ 
+    text-decoration: none; /* This will remove the underline from the texts */  
     display: flex;
     align-items: center;
     color: black;
@@ -52,4 +53,24 @@ nav li:first-child{
     margin-right: auto; 
 }
 
-/* now we shall work on the sidebar that will feature the ham-burger style. */
+/* now we shall work on the sidebar that will feature the ham-burger style. */ 
+.sidebar{
+    position: fixed;
+    top: 0; 
+    right: 0; 
+    height: 100vh; 
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    /* display: flex; */
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li{
+    width: 100%;  /* width of 250px */
+}

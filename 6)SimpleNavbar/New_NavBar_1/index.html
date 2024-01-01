@@ -11,14 +11,16 @@
 <body>
     <!-- Creating the navbar and the buttons inside. -->
     <nav>
-        <!-- <ul class="sidebar">
-            <li><a href="#">Google Crowdsource</a></li>
+        <!-- This will be for the ham-burger style sidebar -->
+        <ul class="sidebar">
+            <li onclick=hideSideBar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
             <li><a href="#">Blog</a></li>
             <li><a href="#">Products</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Forum</a></li>
             <li><a href="#">Login</a></li>
-        </ul> -->
+            <li><a href="#">Login</a></li>
+        </ul>
         <ul>
             <li><a href="#">Google Crowdsource</a></li>
             <li><a href="#">Blog</a></li>
@@ -26,8 +28,9 @@
             <li><a href="#">About</a></li>
             <li><a href="#">Forum</a></li>
             <li><a href="#">Login</a></li>
+            <li onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z"/></svg></a></li>
         </ul>
     </nav>
 </body>
-
+    <script type="text/javascript" src="main.js"></script>
 </html>
