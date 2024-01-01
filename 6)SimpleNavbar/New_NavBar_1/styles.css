@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0; 
+    /* this is to remove 'any-default' margin and padding that the browser applies from all the sides. */
+}
+
+body{
+    /* What I am doing next shall ensure that the "content occupies the entire screen" */
+    min-height: 100vh;
+    background: url(google-crowdsource-bg-img.png);
+    background-size: cover; /* This property covers the entire screen without any disproportions */
+    background-repeat: no-repeat; 
+    background-position: center; /* This will center the background. */
+    /* This way we insure that the image covers the entire container(cover), there is no repeat(repeat), and the image is at the center(position). */
+    font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
