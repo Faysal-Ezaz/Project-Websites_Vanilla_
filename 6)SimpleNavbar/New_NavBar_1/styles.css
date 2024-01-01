@@ -14,3 +14,42 @@ body{
     /* This way we insure that the image covers the entire container(cover), there is no repeat(repeat), and the image is at the center(position). */
     font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+/* working on the navbar: */
+nav{
+    background-color: white;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+/* working on the nav-ul */
+nav ul{
+    width: 100%; /* To make it span the whole width of the container. */
+    list-style: none;
+    display: flex; 
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li{
+    /* each list item represents a navigation link. */
+    height: 50px;
+}
+
+nav a{
+    height: 100%;  /* This is done to match the height of the list items 'nav li' */
+    padding: 0 30px; 
+    text-decoration: none; /* This will remove the underline from the texts*/ 
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+nav a:hover{
+    /* when we hover over the text */
+    background-color: #f0f0f0; 
+}
+
+nav li:first-child{
+    margin-right: auto; 
+}
+
+/* now we shall work on the sidebar that will feature the ham-burger style. */
