@@ -69,19 +69,21 @@ let generateshop =() =>{ // this is an ES6 arrow function.
 
 generateshop(); // This is the function call that displays all the content. 
 
-// So far so good now we will work on the increment and the decrement funtion. 
-
-// the increment function.
+// So far so good, now I will work on the 'increment' and the 'decrement' funtion. 
+// working on the ES6 arrow functions. 
+// INCREMENT FUNCTION.
 let increment = (id) => {
-    let selectedItem = id;
-    console.log(selectedItem.id);
-};
-// The decrement function.
-let decrement = (id) => {
+    console.log("increment");
     // let selectedItem = id;
     // console.log(selectedItem.id);
 };
-// the update function to update the number after incrementation or decrementation.
+// DECREMENT FUNCTION.
+let decrement = (id) => {
+    console.log("decrement"); 
+    // let selectedItem = id;
+    // console.log(selectedItem.id);
+};
+// UPDATE FUNCTION to update the number after increment or decrement.
 let update = ()  => {
 
 };
