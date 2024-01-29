@@ -73,9 +73,8 @@ generateshop(); // This is the function call that displays all the content.
 // working on the ES6 arrow functions. 
 // INCREMENT FUNCTION.
 let increment = (id) => {
-    console.log("increment");
-    // let selectedItem = id;
-    // console.log(selectedItem.id);
+    let selectedItem = id;
+    console.log(selectedItem.id);
 };
 // DECREMENT FUNCTION.
 let decrement = (id) => {
