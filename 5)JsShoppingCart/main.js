@@ -1,5 +1,5 @@
 // targeting an element-id of html using js: 
-let shop = document.getElementById('shop');
+let shop = document.getElementById("shop");
 // succcessfully targeted #short and save it inside a variable.
 
 let shopItemsData = [ // declaring an array that has many objects.
@@ -35,12 +35,10 @@ let shopItemsData = [ // declaring an array that has many objects.
 ]
 // the above code denotes that we have 4 items to sell.
 
-console.log(shop);
 
 // all the code below is hard coded, and we need to automate it, as we need a lot of the cards. 
-let generateshop =() =>{ // this is an ES6 arrow function.
-    return (shop.innerHTML=  shopItemsData
-        .map( (x)=> {
+let generateshop = () =>{ // this is an ES6 arrow function.
+    return (shop.innerHTML=  shopItemsData.map( (x)=> {
             // instead of using x.items, x. price, etc. We will be using the concept of DESTRUCTURING: 
             let {id, name, price, desc, img} = x;
         return `
@@ -55,7 +53,7 @@ let generateshop =() =>{ // this is an ES6 arrow function.
                             <!-- here we use bootstrap icons. -->
                             <i onclick="decrement(${id})" class="bi bi-dash-lg"></i>
                             
-                            <div id=${id} class="quantity">0</div>  <!--This is the number of items between the plus and the minus symbols-->
+                            <div id=${id} class="quantity">0</div>  
                             
                             <i onclick="increment(${id})" class="bi bi-plus-lg"></i> 
                         </div>
@@ -74,11 +72,12 @@ generateshop(); // This is the function call that displays all the content.
 // INCREMENT FUNCTION.
 let increment = (id) => {
     let selectedItem = id;
-    console.log(selectedItem.id);
+    console.log(selectedItem);
 };
 // DECREMENT FUNCTION.
 let decrement = (id) => {
-    console.log("decrement"); 
+    let selectedItem = id;
+    console.log(selectedItem); 
     // let selectedItem = id;
     // console.log(selectedItem.id);
 };
