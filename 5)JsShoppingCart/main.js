@@ -71,17 +71,17 @@ generateshop(); // This is the function call that displays all the content.
 // working on the ES6 arrow functions. 
 // INCREMENT FUNCTION.
 let increment = (id) => {
-    let selectedItem = id;
-    console.log(selectedItem);
+    let selectedItem = id; 
+    console.log(selectedItem); 
 };
 // DECREMENT FUNCTION.
 let decrement = (id) => {
-    let selectedItem = id;
-    console.log(selectedItem); 
-    // let selectedItem = id;
-    // console.log(selectedItem.id);
+    let selectedItem = id; 
+    console.log(selectedItem);
 };
 // UPDATE FUNCTION to update the number after increment or decrement.
-let update = ()  => {
+let update = (id) =>{
+    console.log();
+}  
 
-};
+
