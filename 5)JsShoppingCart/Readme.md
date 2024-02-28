@@ -9,7 +9,14 @@ Then we click on the icon and then the icon font will be copied and pasted in th
 
 Now for the colors I will use the website (coolers.co)
 
-<h2>The main rule of using <i>Flex-Box</i> is to use it under the <b>parent selector</b>.</h2> 
+<h2>The main rule of using <i>Flex-Box</i> is to use it under the <b>parent selector</b>.</h2>   
+
+## Extra notes: 
+Now that the previous issue is solved, how do we specifically identify which item we are selecting from the list, for this I shall be using the 'id' element as it is unique for all the cards.  
+Using the id I shall be able to specify exactly which card the user is clicking on.  
+
+## What is the use of the bucket.  
+The main use of the bucket is that it acts like a placeholder that will hold all the information about which cards the user is clicking on, help with increment decrement of the same element and so on (will be adding more information as I progress on with the project).  
 
 
 
