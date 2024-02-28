@@ -32,9 +32,12 @@ let shopItemsData = [ // declaring an array that has many objects.
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing.", 
         img: "images/img-4.jpg"
     }
-]
+];
 // the above code denotes that we have 4 items to sell.
 
+let basket = [
+     
+]
 
 // all the code below is hard coded, and we need to automate it, as we need a lot of the cards. 
 let generateshop = () =>{ // this is an ES6 arrow function.
