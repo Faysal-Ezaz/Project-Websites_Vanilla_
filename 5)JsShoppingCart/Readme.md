@@ -17,7 +17,8 @@ Using the id I shall be able to specify exactly which card the user is clicking 
 
 ## What is the use of the bucket.  
 The main use of the bucket is that it acts like a placeholder that will hold all the information about which cards the user is clicking on, help with increment decrement of the same element and so on (will be adding more information as I progress on with the project).  
-
+In short the cards on which the user is clicking on is stored by the basket to tell specifically which items are selected by the user.  
+Every time we click on the item, an object is created. 
 
 
 ## There are two types of function in JS: 
