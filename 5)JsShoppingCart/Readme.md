@@ -25,7 +25,11 @@ The main aim of this function is to search whether the <i>thing/item</i> actuall
 If it exists, then only the item number will increase.   
 If it doesnot exist then, this function will push an object inside the basket.  
 Then we make an if else statement.  
-The logic for the if else statement will be different for both increment and decrement function. 
+The logic for the if else statement will be different for both increment and decrement function.   
+
+## Update Function: 
+This function needs to run every time we click on plus or minus button.  
+
 
 
 ## There are two types of function in JS: 
