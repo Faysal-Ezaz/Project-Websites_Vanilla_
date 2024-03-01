@@ -87,6 +87,7 @@ let increment = (id) => {
         search.item+=1; 
     }
     console.log(basket); 
+    update(selectedItem); 
 };
 // DECREMENT FUNCTION.
 let decrement = (id) => {
@@ -99,10 +100,10 @@ let decrement = (id) => {
         search.item-=1; 
     }
     console.log(basket);
+    update(); 
 };
 // UPDATE FUNCTION to update the number after increment or decrement.
-let update = (id) =>{
-    console.log();
+let update = (id) => {
+    console.log(id);
+
 }  
-
-
