@@ -36,8 +36,7 @@ let shopItemsData = [ // declaring an array that has many objects.
 // the above code denotes that we have 4 items to sell.
 
 let basket = [
-     
-]
+];
 
 // all the code below is hard coded, and we need to automate it, as we need a lot of the cards. 
 let generateshop = () =>{ // this is an ES6 arrow function.
@@ -75,12 +74,31 @@ generateshop(); // This is the function call that displays all the content.
 // INCREMENT FUNCTION.
 let increment = (id) => {
     let selectedItem = id; 
-    console.log(selectedItem); 
+    let search = basket.find((x) => x.id === selectedItem);   
+
+    // logic behind this if else, if the item exists, increment, if item doesnot exist, push object to basket.
+    if(search === undefined){
+        basket.push({
+            id: selectedItem, 
+            item: 1, 
+        });
+    }
+    else{
+        search.item+=1; 
+    }
+    console.log(basket); 
 };
 // DECREMENT FUNCTION.
 let decrement = (id) => {
     let selectedItem = id; 
-    console.log(selectedItem);
+    let search = basket.find((x) => x.id === selectedItem);   
+
+    // logic has to be changed. 
+    if(search.item === 0) return; // this return statement stops items from moving to negative. 
+    else{
+        search.item-=1; 
+    }
+    console.log(basket);
 };
 // UPDATE FUNCTION to update the number after increment or decrement.
 let update = (id) =>{
