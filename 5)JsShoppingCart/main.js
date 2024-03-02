@@ -106,6 +106,15 @@ let decrement = (id) => {
 let update = (id) => {
     // making a quick search function, if and only if item exists, only then the number will increase. 
     let search = basket.find((x) => x.id === id); // using the find((what i search for) => (what i am searching against === (tyring to match with))) method.
-    console.log(search.item);  
-    // after this statement we are getting the output in the form: only item is shown and not even the id. 
-}  
+    document.getElementById(id).innerHTML = search.item; 
+    console.log(search.item); 
+    calculation(); // only trigerred when the update() is triggered.  
+};  
+
+// want this funciton to run only when the update funciton gets trigerred. 
+let calculation = (id) => {
+    let cartIcon = document.getElementById("cartAmount"); 
+    cartIcon.innerHTML = basket.map((x)=>x.item).reduce((x,y) => x+y, 0); 
+    console.log(); // in the second function, x and y are used.
+    // the reason for using two numbers is so that the one number will store the addition of the two numbers. 
+};
