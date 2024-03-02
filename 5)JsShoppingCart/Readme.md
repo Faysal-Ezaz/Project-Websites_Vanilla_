@@ -29,6 +29,11 @@ The logic for the if else statement will be different for both increment and dec
 
 ## Update Function: 
 This function needs to run every time we click on plus or minus button.  
+This funtion is in use with <b>Increment</b> and <b>Decrement</b> ES6 arrow function and yeilds the output as the <i>unique id</i> that is being increment or decremented.  
+Now the <b>id</b> used in <i>update</i> funtion is directly related to <b>generateShop</b>'s `<div id=${id} class="quantity">0</div>` line.  
+So the output generated shall be in that specific form itself. To execute the same, `let search = basket.find((x) => x.id === id);` inside the update function helps make the required changes.   
+ 
+
 
 
 
