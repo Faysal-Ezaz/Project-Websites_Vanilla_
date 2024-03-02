@@ -29,6 +29,19 @@ The logic for the if else statement will be different for both increment and dec
 
 ## Update Function: 
 This function needs to run every time we click on plus or minus button.  
+This funtion is in use with <b>Increment</b> and <b>Decrement</b> ES6 arrow function and yeilds the output as the <i>unique id</i> that is being increment or decremented.  
+Now the <b>id</b> used in <i>update</i> funtion is directly related to <b>generateShop</b>'s `<div id=${id} class="quantity">0</div>` line.  
+So the output generated shall be in that specific form itself. To execute the same, `let search = basket.find((x) => x.id === id);` inside the update function helps make the required changes.  
+
+ ## Working on the Cart Symbol:  
+ We will add up all the numbers from the items and display it as the <b>cart number</b>.  
+ New ES6 arrow function will be created with the name <b><i>calculation</i></b>.  
+ This function calculation will run only when the <b><i>update function</i> is triggered</b>.  
+ Since the unique element is <b>id</b> so we use it to calculate the final number.  
+ We need to make changes to the cart icon so we copy the <b>id</b> of the cart icon and use `document.getElementById` with it and save it to the variable `cartIcon`.  
+ `basket.map((x)=>x.item).reduce((x,y) => x+y, 0)`
+Using this piece of code, we show the final number to the user as cartNumber.
+ 
 
 
 
@@ -42,7 +55,6 @@ This function needs to run every time we click on plus or minus button.
 
 ## This is the removed code from the codebase: 
 <details>    
-    
     <div class="item">
             <img width="220" src="images/img-2.jpg" alt="">
             <div class="details">
@@ -90,5 +102,5 @@ This function needs to run every time we click on plus or minus button.
                     </div>
                 </div>
             </div>
-        </div>
+        </div>  
 </details>
