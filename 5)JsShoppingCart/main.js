@@ -86,8 +86,8 @@ let increment = (id) => {
     else{
         search.item+=1; 
     }
-    console.log(basket); 
-    update(selectedItem); 
+    // console.log(basket); 
+    update(selectedItem); // we get the id of the item. 
 };
 // DECREMENT FUNCTION.
 let decrement = (id) => {
@@ -99,11 +99,13 @@ let decrement = (id) => {
     else{
         search.item-=1; 
     }
-    console.log(basket);
-    update(); 
+    // console.log(basket);
+    update(selectedItem); // we get the unique id of the item.
 };
 // UPDATE FUNCTION to update the number after increment or decrement.
 let update = (id) => {
-    console.log(id);
-
+    // making a quick search function, if and only if item exists, only then the number will increase. 
+    let search = basket.find((x) => x.id === id); // using the find((what i search for) => (what i am searching against === (tyring to match with))) method.
+    console.log(search.item);  
+    // after this statement we are getting the output in the form: only item is shown and not even the id. 
 }  
