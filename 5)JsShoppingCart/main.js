@@ -35,14 +35,15 @@ let shopItemsData = [ // declaring an array that has many objects.
 ];
 // the above code denotes that we have 4 items to sell.
 
-let basket = [
-];
+let basket = JSON.parse(localStorage.getItem("data")) || []; // here the data is getting retrieved from the local storage.
+// if we have local data it will be retrieved otherwise its just an empty array. 
 
 // all the code below is hard coded, and we need to automate it, as we need a lot of the cards. 
 let generateshop = () =>{ // this is an ES6 arrow function.
     return (shop.innerHTML=  shopItemsData.map( (x)=> {
             // instead of using x.items, x. price, etc. We will be using the concept of DESTRUCTURING: 
             let {id, name, price, desc, img} = x;
+            let search = basket.find((x)=>x.id === id) || [];// here in the arrow function, we are matching agains the id. After this the function will check for all the id's one by one. 
         return `
             <div id=product-id-${id} class="item">
                 <img width="220" src=${img} alt="">
@@ -55,7 +56,7 @@ let generateshop = () =>{ // this is an ES6 arrow function.
                             <!-- here we use bootstrap icons. -->
                             <i onclick="decrement(${id})" class="bi bi-dash-lg"></i>
                             
-                            <div id=${id} class="quantity">0</div>  
+                            <div id=${id} class="quantity">${search.item === undefined ? 0 : search.item}</div>  
                             
                             <i onclick="increment(${id})" class="bi bi-plus-lg"></i> 
                         </div>
@@ -86,6 +87,7 @@ let increment = (id) => {
     else{
         search.item+=1; 
     }
+    localStorage.setItem("data", JSON.stringify(basket));  // set to set item into the local storage.
     // console.log(basket); 
     update(selectedItem); // we get the id of the item. 
 };
@@ -99,6 +101,7 @@ let decrement = (id) => {
     else{
         search.item-=1; 
     }
+    localStorage.setItem("data", JSON.stringify(basket)); 
     // console.log(basket);
     update(selectedItem); // we get the unique id of the item.
 };
@@ -117,4 +120,6 @@ let calculation = (id) => {
     cartIcon.innerHTML = basket.map((x)=>x.item).reduce((x,y) => x+y, 0); 
     console.log(); // in the second function, x and y are used.
     // the reason for using two numbers is so that the one number will store the addition of the two numbers. 
-};
+}; 
+
+calculation(); // here the function is invoked so that, when we refresh, everything was working fine but the number on the cart was refreshed, to prevent this, we call this funciton so that every time the user refreshes, all the numbers are intact. 
