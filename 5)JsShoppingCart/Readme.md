@@ -40,9 +40,24 @@ So the output generated shall be in that specific form itself. To execute the sa
  Since the unique element is <b>id</b> so we use it to calculate the final number.  
  We need to make changes to the cart icon so we copy the <b>id</b> of the cart icon and use `document.getElementById` with it and save it to the variable `cartIcon`.  
  `basket.map((x)=>x.item).reduce((x,y) => x+y, 0)`
-Using this piece of code, we show the final number to the user as cartNumber.
- 
+Using this piece of code, we show the final number to the user as cartNumber.  
 
+## How to make data stay every time we hit refresh.  (setItem, getItem), (JSON.stringify), (JSON.parse): 
+To do something of this sort, we need to store the it in <b>local storage</b> to save the data.  
+Need to click on <b>>></b> button.  
+Following this need to click on <b>Application</b>.   
+But before this, we need to push specifically the <b>basket</b> into the local storage to store the data.  
+After this the browser will remember which item we pick and will store it in the local storage.  
+Ever time we click on the <i>plus</i> or <i>minus</i> button, we want the local storage to be trigerred.  
+for this we use the command `localStorage.setItem("data", JSON.stringify(basket));`  `setItem is used to set the data to the local storage`.  
+here <i>data</i> is the name for the key (of the key value pair) and <i>basket</i> is the object that is pushed to store the data.  
+the reason for using `JSON.stringify` is that it <i>returns</i> the <b>data in a readable format</b>.  
+Still the work is not done since every time we click on refresh, the values on the cart refreshes to 0 but the cart value is stored in the local storage.  
+Main aim is to <b><i>retrieve</i></b> the data from the <b>local storage</b> to the application.    
+Up-untill this point, `let basket = JSON.parse(localStorage.getItem("data")) || [];` If we have local data it will be retrieved otherwise its just an empty array.  
+But the problem that we face is: when we refresh, the numbers reset and when we click on any of the icons, the original number comes back from the local memory,  
+In order to prevent this behavious, we need to keep updated the funciton, hence we use the <b>search</b> function inside the main template `generateShop`.  
+`let search = basket.find((x)=>x.id === id);` Here, we are matching against the id's. After this the function will check for all the id's one by one.
 
 
 ## There are two types of function in JS: 
