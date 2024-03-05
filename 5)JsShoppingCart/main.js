@@ -56,7 +56,9 @@ let generateshop = () =>{ // this is an ES6 arrow function.
                             <!-- here we use bootstrap icons. -->
                             <i onclick="decrement(${id})" class="bi bi-dash-lg"></i>
                             
-                            <div id=${id} class="quantity">${search.item === undefined ? 0 : search.item}</div>  
+                            <div id=${id} class="quantity">
+                            ${search.item === undefined ? 0 : search.item}
+                            </div>  
                             
                             <i onclick="increment(${id})" class="bi bi-plus-lg"></i> 
                         </div>
