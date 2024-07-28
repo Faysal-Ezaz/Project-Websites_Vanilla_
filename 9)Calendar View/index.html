@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Coda|Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="date-picker-section" class="container">
+        <div id="date-picker-container">
+          
+          <div id="date-picker-title">
+            <h4> Select your dates </h4>
+          </div>
+          
+          <p> Click on a date to open the date picker. </p>
+          
+          <div id="date-picker-dates">
+            <div id="date-picker-date-first" class="date-picker-date">
+              24/12/2017
+            </div>
+            <div class="date-picker-date">
+              28/12/2017
+            </div>
+          </div>
+          
+          <p> Revel in how big the dates are now. </p>
+          
+          <div id="date-picker-display-container">
+            <div class="date-picker-display-pair">
+              <div class="date-picker-display">
+                24 Dec
+              </div>
+              <div class="date-picker-display-label">
+                Date one
+              </div>
+            </div>
+            <div class="date-picker-display-pair">
+              <div class="date-picker-display">
+                28 Dec
+              </div>
+              <div class="date-picker-display-label">
+                Date two
+              </div>
+            </div>
+          </div>
+          
+          <div id="date-picker-modal" class="hidden-2">
+            <div id="date-picker-top-bar">
+              <div id="date-picker-previous-month" class="date-picker-change-month">&lsaquo;</div>
+              <div id="date-picker-month">December 17</div>
+              <div id="date-picker-next-month" class="date-picker-change-month">&rsaquo;</div>
+            </div>
+            <div id="date-picker-exit">&times;</div>
+            <table id="date-picker">
+              <tr id="date-picker-weekdays">
+                <th>S</th>
+                <th>M</th>
+                <th>T</th>
+                <th>W</th>
+                <th>T</th>
+                <th>F</th>
+                <th>S</th>
+              </tr>
+              <!-- Actual calendar rows added dynamically -->
+              <!--<tr class="date-picker-calendar-row"></tr>-->
+            </table>
+          </div>
+        </div>  
+      </div>          
+</body>
+<script type="text/javascript" src="./script.js"></script>
+</html>

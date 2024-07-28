@@ -1,0 +1,7 @@
+here in bootstrap, gy is for gap. 
+here, y is for the y-axis and if it were the gx then it would have been for the x-axis.
+It specifies the gap between all the bootstrap elements.
+and if its only 'g' then the gap will be applied for both the x and the y axis.
+<!-- for the larger screens it will take up 4 column space but for all other screens it takes up 8 (col-lg-4) is the way we write it. of xl screen's it will end up taking 2 column spaces.-->
+<!-- If we donot specify the default screen size, it will take up the full width by default. -->
+
