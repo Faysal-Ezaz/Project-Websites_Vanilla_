@@ -1,0 +1,19 @@
+img{
+    width: 30%; 
+    /* 30% of parent element(BODY) and then a bit of space is left on the right*/
+    /* But what if I want to spaceout the 10% space left in between the three pictures. Answer is Flexbox. */
+    margin: calc(10%/6); 
+  /* This will divide the remaining space(10%) left into 6 parts    */
+} 
+
+nav{
+    font-family: 'Raleway', sans-serif; 
+    font-optical-sizing: auto; 
+    font-weight: 800;
+    font-size: 1.5em;
+    text-transform: uppercase; 
+    border-bottom: 2px solid #f1f1f1; 
+    width: 30%; 
+    margin: calc(10%/6);
+    padding: 1.2 em 0;
+}
